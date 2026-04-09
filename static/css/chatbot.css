@@ -1,0 +1,258 @@
+/* Floating chat button */
+.chat-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat-button i {
+    font-size: 24px;
+}
+
+.chat-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Chat modal */
+.chat-modal {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    width: 350px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.chat-modal.open {
+    display: flex;
+}
+
+/* Chat header */
+.chat-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Chat messages area */
+.chat-messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.message.user {
+    background-color: #e3f2fd;
+    align-self: flex-end;
+}
+
+.message.bot {
+    background-color: #f5f5f5;
+    align-self: flex-start;
+}
+
+.message.bot ul {
+    margin: 5px 0 0 20px;
+    padding: 0;
+}
+
+.message.bot li {
+    margin: 3px 0;
+}
+
+/* Markdown styles */
+.message.bot strong {
+    font-weight: 600;
+}
+
+.message.bot em {
+    font-style: italic;
+}
+
+.message.bot code {
+    background-color: #f0f0f0;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.message.bot p {
+    margin: 0 0 8px 0;
+}
+
+.message.bot p:last-child {
+    margin-bottom: 0;
+}
+
+/* Chat input area */
+.chat-input {
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    border-top: 1px solid #eee;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+}
+
+.chat-input button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.chat-input button:hover {
+    background-color: #45a049;
+}
+
+.chat-input button i {
+    font-size: 16px;
+}
+
+/* Voice controls */
+.voice-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.voice-btn:hover {
+    background-color: #45a049;
+}
+
+.voice-btn.recording {
+    background-color: #f44336;
+}
+
+.recording-indicator {
+    display: none;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    animation: pulse 1.5s infinite;
+}
+
+.voice-btn.recording .recording-indicator {
+    display: block;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Voice output controls */
+.voice-controls {
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #eee;
+}
+
+.voice-control-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #dc3545;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.voice-control-btn:hover {
+    background-color: #c82333;
+}
+
+.voice-status {
+    font-size: 14px;
+    color: #666;
+}
