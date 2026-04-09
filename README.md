@@ -85,6 +85,16 @@ python app.py
 4. Predicts future crop prices based on inputs
 
 ---
+## 📊 Data Visualization
+
+This project also provides graphical insights into crop price trends to help users better understand patterns and predictions.
+
+## 📉 Prediction Visualization
+
+These visualizations help in:
+- Understanding historical price trends  
+- Identifying patterns and seasonality  
+- Comparing predicted vs actual prices  
 
 ## 🎯 Use Case
 
