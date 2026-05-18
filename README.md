@@ -1,3 +1,5 @@
+
+<img width="1446" height="694" alt="image" src="https://github.com/user-attachments/assets/16edfab7-ad34-4766-83ce-542589b1f0db" />
 <div align="center">
 
 # 🌾 AgriCast
