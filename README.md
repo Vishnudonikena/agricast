@@ -140,12 +140,10 @@ Pull requests are welcome. For major changes, open an issue first to discuss wha
 ---
 
  Contact
-
-**Vishnu Sai Donikena**
-📧 vishnusaidonikena@gmail.com
-💼 [LinkedIn](https://www.linkedin.com/in/vishnusai-doniker)
+**Vishnu Sai Donikena**  
+📧 vishnusaidonikena@gmail.com  
+💼 [LinkedIn](https://www.linkedin.com/in/vishnusai-donikena/)  
 🔍 Open to Data Analyst roles — remote & freelance
-
 ---
 
 <div align="center">
